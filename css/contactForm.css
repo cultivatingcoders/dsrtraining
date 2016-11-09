@@ -1,0 +1,6 @@
+.comment {
+  opacity: 0.5;
+}
+.comment.approved {
+  opacity: 1;
+}
