@@ -1,4 +1,4 @@
-'use strict';
+
 
 (function() {
   var body = document.body;
