@@ -9,42 +9,69 @@
     <link href="css/contactForm.css" rel="stylesheet" />
 
     <script src="js/contactForm.js"></script>
-    <script src="js/angular.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
 
   </head>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Drew Digital</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Records Of Names</a></li>
+          <li><a href="portfolio.html">Work Site Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
   <body>
 
-    <div class="text-center">
-    <h1>Dsr (basic) question and information form</h1>
+    <div class="container1">
+        <div class="text-center">
+        <h1>Dsr (basic) question and information form</h1>
 
-    <div class="container">
-      <h1><p>For questions, more information on the website or need help, Please leave
-        a comment and email us</p></h1>
+        <div class="container">
+          <h1><p>For questions, more information on the website or need help, Please leave
+            a comment and email us</p></h1>
 
-    <h2><form>
-      <div class="form-group">
-        <label for="email">Full Name or Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter name or email">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-      </div>
-      <div class="form-group">
-        <label for="comment">Your Comment:</label>
-        <input type="text" class="form-control" id="comment" placeholder="Type comment">
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
-      </div>
+        <h2><form>
+          <div class="form-group">
+            <label for="email">Full Name or Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter name or email">
+          </div>
 
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          </div>
 
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form></h2>
-  </div>
+          <div class="form-group">
+            <label for="comment">Your Comment:</label>
+            <input type="text" class="form-control" id="comment" placeholder="Type comment">
+          </div>
+
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form></h2>
+
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
