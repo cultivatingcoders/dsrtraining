@@ -1,3 +1,5 @@
+
+
 .comment {
   opacity: 0.5;
 }
@@ -9,27 +11,24 @@
   padding-top: 35px;
 }
 
-div.img {
+div.body {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
     width: 180px;
+    height:auto;
 }
 
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
+div.body img {
     width: 100%;
     height: auto;
 }
 
-
-<body>
-<div class="img">
-  <a target="_blank" href="Pathway To Self Reliance Logo.jpg">
-    <img src="Pathway To Self Reliance Logo.jpg" alt="Pathway To Self Reliance Logo" width="300" height="200">
-  </a>
-</div>
-</body>
+.body{
+  background: url(Pathway To Self Reliance.JPG);
+}
+.body{
+  background: url(Pathway To Self Reliance.JPG) repeat-x;
+}
+.body{
+  background: url(Pathway To Self Reliance.JPG) repeat-y;
+}
