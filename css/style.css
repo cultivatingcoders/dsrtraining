@@ -1,10 +1,14 @@
 .image{
   padding-top: 60px;
   padding-left: 100px;
-
+  text-align: left;
 }
 body {
   background-color: #52A1A5;
-  color: red;
-  
+  text-align: center;
+}
+form {
+  text-align: right;
+  padding-right: 5%;
+
 }
