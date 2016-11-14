@@ -1,5 +1,3 @@
-
-
 .comment {
   opacity: 0.5;
 }
@@ -11,24 +9,6 @@
   padding-top: 35px;
 }
 
-div.body {
-    margin: 5px;
-    border: 1px solid #ccc;
-    width: 180px;
-    height:auto;
-}
-
-div.body img {
-    width: 100%;
-    height: auto;
-}
-
-.body{
-  background: url(Pathway To Self Reliance.JPG);
-}
-.body{
-  background: url(Pathway To Self Reliance.JPG) repeat-x;
-}
 .body{
   background: url(Pathway To Self Reliance.JPG) repeat-y;
 }
