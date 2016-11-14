@@ -8,20 +8,27 @@
 .container1 {
   padding-top: 35px;
   text-align: center;
+  background-color: #22A782
 
 }
 
 .background{
-  padding-top: 35px;
-  background-color: 22A2278
+  padding-top: 30px;
+  background-color: #22A782
 
 }
 
 .container{
  position: center;
  text-align: center;
+ background-color: #22A782
 }
 
 .form-group{
   display: block;
   text-align: center;
+}
+
+.body{
+  background-color: #22A782
+}
