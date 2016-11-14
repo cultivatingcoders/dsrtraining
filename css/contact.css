@@ -1,0 +1,18 @@
+.comment {
+  opacity: 0.5;
+}
+.comment.approved {
+  opacity: 1;
+}
+
+.container1 {
+  padding-top: 35px;
+}
+
+.body{
+  background: (images/pathwayToSelfRelianceLogo.jpg) repeat-y;
+}
+
+.background{
+
+}
