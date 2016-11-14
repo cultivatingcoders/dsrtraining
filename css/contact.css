@@ -7,8 +7,21 @@
 
 .container1 {
   padding-top: 35px;
+  text-align: center;
+
 }
 
-.body{
-  background: url(images/pathwayToSelfRelianceLogo.jpg) repeat-y;
+.background{
+  padding-top: 35px;
+  background-color: 22A2278
+
 }
+
+.container{
+ position: center;
+ text-align: center;
+}
+
+.form-group{
+  display: block;
+  text-align: center;
