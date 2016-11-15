@@ -17,3 +17,12 @@ form {
   padding-top: 200px;
 
 }
+.container h1 {
+  padding-top: 50px;
+  text-align: center;
+}
+h2 form{
+  padding-left: 375px;
+  padding-right: 375px;
+  padding-top: 100px;
+}
