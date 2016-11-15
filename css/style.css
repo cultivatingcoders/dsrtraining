@@ -1,5 +1,20 @@
-.image{
+body{
   padding-top: 60px;
   padding-left: 100px;
+  background-color: #22A782;
+  font-size: 20px;
+}
+p, h1,h2{
+  font-family: "vollkorn";
+  font-size: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 
 }
+ol {
+      padding: 20px;
+      font-size: 30px;
+  }
+  li{
+    font-size: 20px;
+  }
