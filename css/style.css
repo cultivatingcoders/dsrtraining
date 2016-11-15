@@ -1,5 +1,6 @@
 body{
   padding-top: 60px;
+<<<<<<< HEAD
   padding-left: 100px;
   background-color: #22A782;
   font-size: 20px;
@@ -9,6 +10,23 @@ p, h1,h2{
   font-size: 30px;
   padding-left: 50px;
   padding-right: 50px;
+=======
+  padding-left: 60px;
+  text-align: left;
+}
+body {
+  background-color: #52A1A5;
+  text-align: center;
+}
+form {
+  align-items: baseline;
+  padding-top:15%;
+  padding-right: 5%;
+
+}
+.container.row {
+  padding-top: 200px;
+>>>>>>> origin/master
 
 }
 ol {
