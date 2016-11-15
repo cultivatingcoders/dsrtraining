@@ -1,0 +1,19 @@
+.image{
+  padding-top: 60px;
+  padding-left: 60px;
+  text-align: left;
+}
+body {
+  background-color: #52A1A5;
+  text-align: center;
+}
+form {
+  align-items: baseline;
+  padding-top:15%;
+  padding-right: 5%;
+
+}
+.container.row {
+  padding-top: 200px;
+
+}
