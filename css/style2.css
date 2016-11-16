@@ -1,0 +1,42 @@
+body {
+  padding-top: 50px;
+  background-color: #52A1A5;
+  text-align: center;
+  background-image: url("WR dsr.jpg");
+  }
+
+form {
+  padding-top:8px;
+  padding-right: 5%;
+}
+
+ol{
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 90px;
+  padding-right: 75px;
+}
+
+h1{
+  padding-top: 30px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.checkbox label, .radio label {
+  color: white;
+}
+
+.form-inline .checkbox label, .form-inline .radio label {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.form-inline{
+  float:right;
+}
+.row {
+  margin-top: 15px;
+    margin-right: -15px;
+    margin-left: 45px;
+}
