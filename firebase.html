@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example of Using Firebase as a Database</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <style>
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">NNSR</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="acitve"><a href="index.html">Home</a></li>
+        <li><a href="Courseoutline.html">Course Training</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+    </div>
+    </nav>
+
+    <div class="container">
+      <h1>Workers Undergoing Training</h1>
+      <p class="lead"><a href="#">Add Entry</a></p>
+
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Undergoing</th>
+            <th>Completed</th>
+            <th>Edit</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+      </table>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBMyDZhJvL7ipgWDs0esi5CQjjoUCtFL2M",
+        authDomain: "dsr-training.firebaseapp.com",
+        databaseURL: "https://dsr-training.firebaseio.com",
+        storageBucket: "dsr-training.appspot.com",
+        messagingSenderId: "428485944927"
+      };
+      firebase.initializeApp(config);
+
+      var h1 = document.getElementById("value");
+      var dbRef = firebase.database().ref().child('workers');
+      dbRef.on('value', function(snap) {
+
+        $("tbody").html("");
+
+        // Use snap.val to get value
+        var workers = snap.val();
+
+        var row;
+        var data;
+        for(var i = 1; i < workers.length; i ++) {
+
+          row = $("<tr></tr>");
+
+          data = $("<th></th>").html(i);
+          row.append(data);
+
+          data = $("<th></th>").html(workers[i]["First Name"]);
+          row.append(data);
+
+          data = $("<th></th>").html(workers[i]["Last Name"]);
+          row.append(data);
+
+          data = $("<th></th>").html(workers[i]["Courses"]["Undergoing"]["ID"]);
+          row.append(data);
+
+          data = $("<th></th>").html("<a href='#'><i class='fa fa-arrow-right'></i></a>");
+          row.append(data);
+
+          data = $("<th></th>").html("<a href='#'><i class='fa fa-pencil'></i></a>");
+          row.append(data);
+
+          data = $("<th></th>").html("<a href='#'><i class='fa fa-times'></i></a>");
+          row.append(data);
+
+          $("tbody").append(row);
+          console.log(workers[i])
+        }
+      });
+    </script>
+
+  </body>
+</html>
